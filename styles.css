@@ -1,0 +1,48 @@
+body {
+    background-color: #1F2324;
+  }
+
+.intro {
+    text-align: center;
+    white-space: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration-line: none;
+}
+
+  .menu {
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .menu-item {
+    white-space: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration-line: none;
+  }
+
+  .links {
+    text-align: center;
+  }
+
+  .link-item {
+    white-space: pre;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration-line: none;
+  }
+
+  a:hover {
+    color: #84e184;
+  }
+
+  a:active {
+    text-decoration: underline;
+  }
+
+  iframe{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
