@@ -1,2 +1,5 @@
 # wraaath.com
-website
+Three words. \
+Work. \
+In. \
+Progress. 
