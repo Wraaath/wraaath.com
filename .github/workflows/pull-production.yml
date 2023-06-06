@@ -1,0 +1,20 @@
+name: Pull from Production
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # Schedule to run every 10 minutes
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Pull from Production
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git checkout production
+          git pull origin production
