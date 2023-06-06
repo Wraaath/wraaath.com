@@ -1,0 +1,19 @@
+name: pull from production-branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pull_production_branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: pull
+        run: |
+          git checkout production
+          git pull origin production
